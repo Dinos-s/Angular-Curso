@@ -1,0 +1,10 @@
+<div class="class">
+    <h2>Aula de angular#9 Render condicional</h2>
+    <div *ngIf="canShow">utilizando o atributo'*' ngif</div>
+    <p *ngIf="name === 'hero'">O nome, é igual como o esperado</p>
+    <p *ngIf="name === 'max'; else nameNotFound">Usando o tamplete para exibir o condição else:</p>
+    <ng-template #nameNotFound>
+        <p>Parte dentro do 'ng-template'</p>
+        <p>O nome comrresponde com o esperado</p>
+    </ng-template>
+</div>
