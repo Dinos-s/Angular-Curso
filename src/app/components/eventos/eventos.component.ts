@@ -15,6 +15,6 @@ export class EventosComponent implements OnInit {
   }
 
   showMessage(): void{
-    this.show = !this.show //togle, um estilo de envento onde, o valor a ser mostrado será o inverso, nesse caso true -> false e false -> true;
+    this.show = !this.show; //togle, um estilo de envento onde, o valor a ser mostrado será o inverso, nesse caso true -> false e false -> true;
   }
 }
