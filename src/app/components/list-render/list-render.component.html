@@ -3,8 +3,10 @@
     <ul>
         <li *ngFor="let animal of animals">
             Nome: {{animal.name}} - {{animal.type}}
+            <button (click)="ageShow(animal)">Show age</button>
         </li>
     </ul>
+    <h3>{{animalDetails}}</h3>
 </div>
 <!-- Seguindo as boas praticas da programação, ao usarmos a diretiva *ngFor="let 'animal' of animals; podemos utilizar qualquer palavra, entre o let eo of, desde que a palavra a ser referenciada após o of seja a mesma que declarada no component.ts; -->
 <!-- Porem é bom sembre usarmos o singular da palavra a ser referenciada-->
