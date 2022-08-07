@@ -1,0 +1,10 @@
+<div class="class">
+    <h2>Aula de angular#12 - Renderização de listas</h2>
+    <ul>
+        <li *ngFor="let animal of animals">
+            Nome: {{animal.name}} - {{animal.type}}
+        </li>
+    </ul>
+</div>
+<!-- Seguindo as boas praticas da programação, ao usarmos a diretiva *ngFor="let 'animal' of animals; podemos utilizar qualquer palavra, entre o let eo of, desde que a palavra a ser referenciada após o of seja a mesma que declarada no component.ts; -->
+<!-- Porem é bom sembre usarmos o singular da palavra a ser referenciada-->
