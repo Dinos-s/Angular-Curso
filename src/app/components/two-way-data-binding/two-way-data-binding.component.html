@@ -1,0 +1,12 @@
+<div class="class">
+    <h2>Aula de angular#15 - Two way data binding</h2>
+    <form>
+        <input type="text" [(ngModel)]="name" name="name"
+        placeholder="Digite seu nome">
+        <input type="submit" value="enviar">
+    </form>
+    <div *ngIf="name !== ''">
+        <p>{{name}}</p>
+    </div>
+</div>
+<!-- [()] -> é uma sintaxe de ligação bidirecional, onde os [] -> é uma sintaxe de associação de propriedade, e os () sintaxe de evento; -->
