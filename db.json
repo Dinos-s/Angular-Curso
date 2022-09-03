@@ -1,7 +1,7 @@
 {
     "animals":[
         {"id": 1, "name": "Trixy", "type":"Golden-Fish", "age": 2},
-        {"name":"Brock", "type":"Dog", "age": 5},
-        {"name":"Blim", "type":"Cat", "age": 6}
+        {"id": 2,"name":"Brock", "type":"Dog", "age": 5},
+        {"id": 3,"name":"Blim", "type":"Cat", "age": 6}
     ]
 }

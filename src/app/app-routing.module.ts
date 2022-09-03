@@ -7,6 +7,7 @@ import { EventosComponent } from './components/eventos/eventos.component';
 
 import { FirstComponentComponent } from './components/first-component/first-component.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
+import { ItemDetailsComponent } from './components/item-details/item-details.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { PipesOepratorsComponent } from './components/pipes-oeprators/pipes-oeprators.component';
@@ -23,9 +24,10 @@ const routes: Routes = [
   {path: 'Aula9', component: IfRenderComponent},
   {path: 'Aula10', component: EventosComponent},
   {path: 'Aula11', component: EmitterComponent},
-  {path: 'Aula12-13-16', component: ListRenderComponent},
+  {path: 'Aula12-13-16-18-19', component: ListRenderComponent},
   {path: 'Aula14', component: PipesOepratorsComponent},
   {path: 'Aula15', component: TwoWayDataBindingComponent},
+  {path: 'Aula12-13-16-18-19/:id', component: ItemDetailsComponent},
 ];
 
 @NgModule({

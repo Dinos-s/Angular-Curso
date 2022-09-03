@@ -21,8 +21,7 @@ export class ListRenderComponent implements OnInit {
     this.getAnimals()
    }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   ageShow(animal: IAnimal){
     this.animalDetails = `${animal.name}, tem ${animal.age}`

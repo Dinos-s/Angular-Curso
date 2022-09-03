@@ -2,7 +2,7 @@
     <h2>Aula de angular#12 - Renderização de listas</h2>
     <ul>
         <li *ngFor="let animal of animals">
-            Nome: {{animal.name}} - {{animal.type}}
+            Nome:<a routerLink="/Aula12-13-16-18-19/{{ animal.id }}">{{animal.name}}</a> - {{animal.type}}
             <button (click)="ageShow(animal)">Show age</button>
             <button (click)="delete(animal)">Excluir</button>
         </li>
