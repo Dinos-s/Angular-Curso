@@ -29,7 +29,9 @@ export class ListRenderComponent implements OnInit {
 
   delete(animal: IAnimal){
     console.log("removido");
-    this.animals = this.listService.remove(this.animals, animal)
+    this.animals = this.animals.filter((a) => animal.name !== a.name); //excluido dados apens do fronte-end;
+    this.listService.remove(animal.id).subscribe()//exclui o dado diretamente do db.json;
+    //this.listService.remove(this.animals, animal)
   }
 
   getAnimals(): void{

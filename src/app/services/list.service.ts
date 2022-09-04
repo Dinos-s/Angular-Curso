@@ -12,10 +12,14 @@ export class ListService {
 
   constructor(private http: HttpClient) { }
 
-  remove(animals: IAnimal[], animal: IAnimal){
-    console.log("Service acionado");
-    return animals.filter((a) => animal.name !== a.name); // só removerá o animal com o mesmo nome, e deixando o resto o mesmo;
-  }
+  // remove(animals: IAnimal[], animal: IAnimal){
+  //   console.log("Service acionado");
+  //   return //animals.filter((a) => animal.name !== a.name); // só removerá o animal com o mesmo nome, e deixando o resto o mesmo;
+  // }
+
+  remove(id: number){
+    return this.http.delete<IAnimal>(`${this.apiUrl}/${id}`);
+  }//removendo item recebido como paranmetro, da URL;
 
   getAll(): Observable<IAnimal[]>{
     return this.http.get<IAnimal[]>(this.apiUrl)
